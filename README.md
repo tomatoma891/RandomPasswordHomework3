@@ -19,4 +19,3 @@ The application should validate user input and ensure that at least one characte
 
 Once all prompts are answered, the user will be presented with a password matching the answered prompts. Displaying the generated password in an alert is acceptable, but attempt to write the password to the page instead.
 
-Screen Shot 2019-12-21 at 1.38.54 PM
