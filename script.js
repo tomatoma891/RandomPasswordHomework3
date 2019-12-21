@@ -80,4 +80,4 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 
-// BONUS EVENT LISTENER
+
