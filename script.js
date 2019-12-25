@@ -80,23 +80,26 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-function addInput() {
-  const input = document.createElement('input');
-  input.setAttribute("id", "myInput");
-  document.body.appendChild(input);
-}
+// function addInput() {
+//   const input = document.createElement('input');
+//   input.setAttribute("id", "myInput");
+//   document.body.appendChild(input);
+// }
 
 function copyToClipboard() {
   myInput = document.getElementById("myInput");
-
-
+  myInput.setSelectionRange(0, 99999)
   myInput.focus();
   myInput.select();
-  const issuccessful = document.execCommand("copy");
-
 }
-addInput()
+// addInput()
 copyToClipboard()
+
+generateBtn.addEventListener("click", copyToClipboard);
+
+
+
+
 
 
 
