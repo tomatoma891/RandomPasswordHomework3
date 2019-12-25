@@ -87,15 +87,16 @@ generateBtn.addEventListener("click", writePassword);
 // }
 
 function copyToClipboard() {
-  myInput = document.getElementById("myInput");
+  myInput = document.getElementById("password");
   myInput.setSelectionRange(0, 99999)
   myInput.focus();
   myInput.select();
+  document.execCommand("copy");
 }
 // addInput()
 copyToClipboard()
 
-generateBtn.addEventListener("click", copyToClipboard);
+copyBtn.addEventListener("click", copyToClipboard);
 
 
 
